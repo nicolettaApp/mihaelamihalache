@@ -1,0 +1,580 @@
+
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	width: 100% !important;
+	height: 100% !important;
+    font-size: 13px;
+	position: relative;
+    color: white;
+  background-color: #303030;
+}
+
+ul, ol {
+	list-style: none;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+.greenLime 
+{
+    color:#b0cd3b;
+}
+
+
+/* ...................Navigation .......................*/
+.menu {
+	
+	transition: all 0.8s;
+}
+
+.navbar {
+	
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  padding: 7px;
+  -webkit-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  -moz-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.navbar-inverse {
+	background: #2E2F31;
+	border: 0;
+    
+}
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 1.1em;
+}
+
+.activ 
+{
+    color: #e53ecc;
+}
+
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+.dropdown-menu {
+	background: #2E2F31;
+	border-radius: 0;
+	border: 0;
+}
+.dropdown-menu li a {
+	padding: 7px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background:  #2E2F31;
+}
+
+.navbar-inverse
+{
+	background: #2E2F31;
+	border: none;
+	margin: 0;
+}
+.navbar-default .navbar-brand
+{
+    display: block;
+	font-weight: 100px;
+	font-size: 30px;
+	padding: 10px 0 0 0;
+	height: 65px;
+	line-height: 40px;
+}
+
+.navbar-inverse .nav li a:hover
+{
+	color: #e53ecc;
+}
+
+.navbar-inverse .navbar-toggle
+{
+	border: none;
+	padding-top: 15px;
+}
+.navbar-inverse .navbar-toggle .icon-bar
+{
+	background: #e53ecc;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus { background-color: transparent }
+
+/*....................Carousel- head page.................*/
+
+#home { padding-top: 35px; }
+
+/* end simpletextrotator */
+
+
+/* start home */       
+#home
+	{
+        background: url('../images/home-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 120px;
+        padding-bottom: 140px;
+        text-align: center;
+	}
+#home h1
+    {
+        border: 2px solid #D43F52;
+        color: #D43F52;
+        display: inline-block;
+        letter-spacing: 6px;
+        padding: 25px 35px;
+        margin: 30px 0;
+    }
+#home h2
+    {
+        padding-bottom: 10px;
+    }
+#home .btn
+    {
+        background: rgba(128,205,50, 0.3);
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        width: 180px;
+        height: 60px;
+        margin-top: 40px;
+        padding-top: 18px;
+        transition: all 0.4s ease-in-out;
+    }
+#home .btn:hover
+    {
+        background: #e53ecc;
+        border-color: transparent;
+    }
+/* end home */
+
+ 
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+    height: 126px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #424242;
+  position: absolute;
+    top: 50px;
+   
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+   padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 50px;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* ................Portfolio Section............................... */
+#portfolio {
+	padding: 50px 0;
+    background-color: #303030;
+	}
+#portfolio h2 {
+	color: white;
+}
+.categories {
+	padding-bottom: 30px;
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+
+.btn-dark,
+.btn-dark:focus {
+    background-color: #313337;
+    color: white;
+}
+
+
+
+.btn-dark:hover, .btn-dark:active{
+    background-color: rgba(128,205,50, 0.3);
+        color: white;
+
+}
+#portfolio .active 
+{
+    background-color: #e53ecc;
+        color: white;
+}
+
+.isotope-item {
+	z-index: 2
+}
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+.isotope, .isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.portfolio-item {
+	margin: 15px 0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.portfolio-item:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.portfolio-item .hover-bg {
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.66);
+	padding: 30% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+	text-transform: uppercase;
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-bg .hover-text>i {
+	opacity: 0;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>i {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+#portfolio i.fa {
+	font-size: 20px;
+	padding: 5px;
+	color: #E87E04;
+}
+
+/* .......................Contact Section............................. */
+
+#contact
+{
+	background: #303030;
+	color: #EEE;
+	padding: 80px 0 80px 0;
+}
+#contact h2 { font-weight: 400; }
+#contact .text-center p { padding: 0 0 60px 0; }
+#contact h2, #contact h3 { padding: 0 0 20px 0; }
+#contact .form-control
+{
+	background: transparent;
+	border: 1px solid #444;
+	border-radius: 0px;
+	color: #FFF;
+	margin: 10px 0 10px 0;
+}
+#contact input { height: 60px; }
+#contact .form-control:focus
+{
+	background: rgb(128,205,50, 0.35);
+	border-color: transparent;
+	box-shadow: none;
+}
+#contact input[type="submit"]
+{
+	color: #FFF;
+	font-weight: 600;
+	letter-spacing: 1px;
+	width: 220px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+#contact input[type="submit"]:hover
+{
+	background-color: #e53ecc;
+	border-color: transparent;
+	color: #FFF;
+}
+#contact .address
+{
+	padding: 20px;
+	padding-top: 0;
+	margin: 0;
+}
+#contact .fa
+{
+	color: #80cd32;
+	font-size: 20px;
+	padding: 6px 10px 6px 0;
+}
+
+#contact a {	color: #80cd32; }
+a:hover, a:active 
+{
+	color:#80cd32;
+	text-decoration: none;
+}
+
+/* .....................Footer Section............................*/
+#footer {
+	background: #2E2F31;
+	color: rgba(255,255,255,0.4);
+	padding: 30px 0 25px 0;
+    max-height: 133px;
+}
+#footer p {
+	font-size: 13px;
+}
+#footer a {
+	color: rgba(255,255,255,0.7);
+}
+
+.bottom-title
+{
+    color: whitesmoke;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.go-top 
+{
+	background-color: #e53ecc;
+	border-radius: 50%;
+	bottom: 2em;
+	right: 2em;
+	color: #FFF;
+	display: none;
+	position: fixed;
+	text-decoration: none;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+
+
+.go-top:hover {	color: #F9F9F9; }
+
+
+
+ 
+@media (max-width: 1024px) {
+#about img {
+	float: left;
+	margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 1199px) {
+	.full-width {
+    width: auto;
+}
+}
+
+/* ................. 768 media quires .................................*/
+@media only screen and ( max-width: 768px ) {
+	.navbar-default .navbar-brand {	margin-left: 20px; }
+	.navbar-default .navbar-nav	{ margin: 0; }
+	.navbar-default .navbar-collapse
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+    .carousel-caption {
+    display: none;
+}
+	
+	.full-width {
+    width: auto;
+}
+     .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 50%;
+        margin-bottom: 35px;
+    }
+  }
+.testimonial  h1 {
+    text-align: center;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+    line-height: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+.panel h1 span {
+    background: #303030;
+    padding: 0 25px;
+}
+}
+/* ....................................... 680 media quires.................... */
+
+@media only screen and ( max-width: 680px ) {
+	.navbar-default .navbar-nav li a { bottom: 1px; line-height: normal; height: 100%; }
+    jumbotron h1 p
+    {
+        text-align: center;
+        float: left;
+        padding: 20px;
+    }
+  
+}
+
+/* ....................................... 600 media quires.................... */
+@media only screen and ( max-width: 640px ) {	
+	
+.home { padding-top: 65px; }
+
+    .features
+    {
+        padding: 50px;
+    }
+ 
+
+    }
+
+
+
+    
